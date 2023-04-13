@@ -7,7 +7,7 @@ void pattern_5(int n);
 void pattern_6(int n);
 int main()
 {
-  pattern_3(6);
+  pattern_6(6);
   return 0;
 }
 
@@ -65,7 +65,7 @@ void pattern_3(int n)
   * *
   **
   *
-  
+
   */
   int row = 1;
   int col = 1;
@@ -85,3 +85,81 @@ void pattern_3(int n)
   printf("\n*");
 }
 
+void pattern_4(int n)
+{
+  /*
+
+  1 
+  1 2
+  1 2 3
+  1 2 3 4
+  1 2 3 4 5
+  1 2 3 4 5 6
+
+  */
+  int row = 1;
+  int col = 1;
+  for (row; row <= n; row++)
+  {
+    for (col = 1; col <= row; col++)
+    {
+      printf("%i ", col);
+    }
+    printf("\n");
+  }
+}
+
+void pattern_5(int n)
+{
+  /*
+
+  1 2 3 4 5 6
+  1 2 3 4 5
+  1 2 3 4
+  1 2 3
+  1 2
+  1
+
+  */
+  int row = n;
+  int col = 1;
+  for (row; row >= 1; row--)
+  {
+    for (col = 1; col <= row; col++)
+    {
+      printf("%i ", col);
+    }
+    printf("\n");
+  }
+}
+
+void pattern_6(int n)
+{
+  /*
+
+  1
+  1 2
+  1   3
+  1     4
+  1       5
+  1 2 3 4 5 6
+  
+  */
+  int row = 2;
+  int col = 1;
+  printf("1\n");
+  for(row ; row <= n-1 ; row++)
+  {
+    printf("1 ");
+    for(col = row-2 ; col >= 1 ; col--)
+    {
+      printf("  ");
+    }
+    printf("%d\n",row);
+  }
+  for(col = 1 ; col <= n ; col++)
+  {
+    printf("%d ",col);
+  }
+
+}
