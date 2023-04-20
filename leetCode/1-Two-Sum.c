@@ -1,12 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-int *twoSum(int *nums, int numsSize, int target, int *returnSize);
-int main(int argc, char const *argv[])
-{
-
-    return 0;
-}
-
 int *twoSum(int *nums, int numsSize, int target, int *returnSize)
 {
     *returnSize = 2;
