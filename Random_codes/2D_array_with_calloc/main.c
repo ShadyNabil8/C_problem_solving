@@ -31,7 +31,7 @@ int main(int argc, char const *argv[])
         unsigned int NULL_flag = 0;
         for (int i = 0; i < num_rows; i++)
         {
-            *(row_ptr + i) = calloc(num_columns, sizeof(int));
+            *(row_ptr + i) = (int *)calloc(num_columns, sizeof(int));
             if (NULL == *(row_ptr + i))
             {
                 NULL_flag = 1;
