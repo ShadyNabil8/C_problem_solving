@@ -181,3 +181,29 @@ int matrixDiff(void *mat1, void *mat2, int n)
     }
     return diff;
 }
+
+int GetDigit(int num, int index)
+{
+    int retVal = -1;
+    if (index > 0)
+    {
+        retVal = (((num % (int)pow((int)10, (int)index)) - ((num % (int)pow((int)10, (int)(index - 1))))) / ((int)pow((int)10, (int)(index - 1))));
+    }
+    else
+    {
+    }
+    return retVal;
+}
+
+int GetNumDigit(int num)
+{
+    int retVal = 1;
+    if (num != 0)
+    {
+        while ((num/=10) != 0)
+        {
+            retVal++;
+        }
+    }
+    return retVal;
+}
