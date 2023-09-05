@@ -61,7 +61,8 @@ char *superReducedString(char *s)
         }
     }
     if (stack.top == 0)
-    {
+    {Ice Cream Parlor
+
         return "Empty String";
     }
     else
