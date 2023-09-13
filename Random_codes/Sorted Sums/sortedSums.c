@@ -33,7 +33,7 @@ uint64_t sortedSums_bf(int size, int *arr)
 uint64_t sortedSums_ob(int size, int *arr)
 {
 
-    uint64_t ans = 0;                                // returned value
+    uint64_t ans = 0;                           // returned value
     int *ws = (int *)calloc(size, sizeof(int)); // ws: workshop
     int ws_size = 0;
     int fl = 0; // first larger element
@@ -70,7 +70,7 @@ uint64_t sortedSums_ob(int size, int *arr)
 int main()
 {
     int arr[10000] = {0};
-    for(int i = 10000 ; i >= 1 ; i--)
+    for (int i = 10000; i >= 1; i--)
     {
         arr[i] = i;
     }
